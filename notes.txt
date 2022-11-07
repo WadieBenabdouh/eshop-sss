@@ -1,0 +1,3 @@
+                <img class="stock-img" src="img/central-unit.png" alt="Central unit">
+                <img class="stock-img" src="img/monitor.png" alt="Monitor">
+                <img class="stock-img" src="img/razer-inputs.png" alt="Razer Inputs">

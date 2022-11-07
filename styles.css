@@ -1,0 +1,181 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* GLOABAL TWEAKS */
+/* :root{
+
+} */
+
+/* HEADER */
+header {
+    background: url('img/banner.jpg');
+    background-position: -10px;
+    padding: 0.5em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 8em;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0 2em;
+    list-style-type: none;
+}
+
+.fa-solid,
+.fas {
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ff0000;
+}
+
+/* main */
+
+/* main section */
+main .trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('img/bgmini.jpg');
+}
+
+.trending .hot {
+    /* images */
+    max-width: 15em;
+}
+
+.hot-products {
+    display: grid;
+    margin-top: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    place-items: center;
+    border: 1px dotted #d41a58;
+    gap: 1em;
+}
+
+/* main stock*/
+.stock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c7aab3;
+}
+
+.stock h2 {
+    font-weight: bold;
+    margin-top: 1em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    /* Thanks Firefox Channel */
+}
+
+.stock-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+}
+
+.stock-img {
+    max-width: 30em;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product p {
+    text-align: center;
+    width: 35em;
+}
+
+.product .product-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1EM;
+}
+
+.product a {
+    text-decoration: none;
+    margin-top: 1em;
+    color: #000000;
+    background-color: #f0870f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+/* coning soon */
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #cfeb90;
+}
+
+.coming-soon h3 {
+    font-weight: bold;
+    margin-top: 1em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.later-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.coming-soon .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container img {
+    max-width: 13em;
+}
+
+
+/*------RESPONSIVE AREA---------*/
+
+/* Mobile Layout A52 Only? */
+@media screen and (max-width:414px) {
+    .trending h2{
+        color: red;
+    }
+}
+/* COUNTER TEST */
+@media screen and (min-width:415px) and (max-width:768px) {
+    .trending h2{
+        color: rgb(17, 0, 255);
+    }
+}
